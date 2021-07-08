@@ -1,0 +1,74 @@
+<html>
+    <head>
+      
+      <link rel="stylesheet" type="text/css" href="style.css" >
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <script type="text/javascript">
+      
+          function calculate(){
+            var p = 0;
+            var i = 0;
+            var n = 0;
+            var CI = 0;
+
+            p = parseInt(document.getElementById("principal").value);
+            i = parseInt(document.getElementById("annual-interest-rate").value);
+            n = parseInt(document.getElementById("number-of-period").value);
+
+            CI = ((p*(1+i)^n)-p);
+            document.getElementById("res").innerHTML=CI;
+          }
+      </script>
+     </head>
+
+    <body class="body">
+      <br>
+    <div class="container">
+      <div class="card text-black bg-light mb-9" style="max-width: 200rem;">
+       
+          <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 id="title">Compound Interest Calculator</h1>
+            </div>
+          </div>
+          <br>
+
+          <div class="row">
+            <div class="col-md-12">
+        <form>
+            <div class="form-group">
+                  <label class="form-group">Principal</label>
+                  <input class="form-control" type="text" id="principal" placeholder="Amount">
+             </div>
+              <div class="form-group">
+                  <label class="form-group">Interest rate</label>
+                  <input class="form-control" type="text" id="annual-interest-rate"
+                  placeholder="Rate in %">
+              </div>
+              <div class="form-group">
+                  <label class="form-group">Number of periods</label>
+                  <input class="form-control" type="text" id="number-of-period"
+                  placeholder="Period">
+              </div>
+              <button class="btn btn-block btn-info" type="button" onclick="calculate()">Calculate</button>
+          </form>
+            </div>
+          </div>
+          <br>
+          <h5 class="total">Result</h5>
+          
+          <div class="row">
+            <div class="col-md-12">
+              <h1 id="res">0</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="copyright">
+     <h6>&copy; 2020 Interest calculator. Created by <span class="name">Okononfua David</span> All right reserved.</h6> 
+  </div>
+    </body>
+</html>
