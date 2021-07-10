@@ -2,12 +2,14 @@
     <head>
       
       <link rel="stylesheet" type="text/css" href="style.css" >
-      <script type="text/javascript" src = "script.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
      </head>
 
-    <body>
+    <body class="body">
+      <br>
     <div class="container">
-      <div class="card"=>
+      <div class="card text-black bg-light mb-9" style="max-width: 200rem;">
+       
           <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -19,21 +21,27 @@
           <div class="row">
             <div class="col-md-12">
         <form>
-            <div>
+            <div class="form-group">
                   <label class="form-group">Principal</label>
                   <input class="form-control" type="text" id="principal" placeholder="Amount">
-              </div>
-              <div>
+             </div>
+              <div class="form-group">
                   <label class="form-group">Interest rate</label>
                   <input class="form-control" type="text" id="annual-interest-rate"
                   placeholder="Rate in %">
               </div>
               <div class="form-group">
-                  <label class="form-group">Number of periods</label>
-                  <input class="form-control" type="text" id="number-of-period"
-                  placeholder="Period">
+                  <label class="form-group">Number of Years</label>
+                  <input class="form-control" type="text" id="number-of-year"
+                  placeholder="Years">
               </div>
-              <button class="btn btn-block btn-info" type="button" onclick="calculate()">Calculate</button>
+              <div class="form-group">
+                  <label class="form-group">Number of Time in Year </label>
+                  <input class="form-control" type="text" id="number-of-times-in-year"
+                  placeholder="Times in Year">
+              </div>
+
+              <button id = "btn" class="btn btn-block btn-info" type="button">Calculate</button>
           </form>
             </div>
           </div>
@@ -44,10 +52,10 @@
             <div class="col-md-12">
               <h1 id="res">0</h1>
             </div>
-          </div> 
+          </div>
         </div>
       </div>
     </div>
     </body>
-    
+    <script type="text/javascript" src = "script.js"></script>
 </html>

@@ -1,17 +1,5 @@
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #06b1cf;
-}
-
-.card {
-    display: flex;
-    background-color: #fff;
-    align-items: space-between;
-    justify-content: center;
-    width: 100rem;
-    height: auto;
+.body{
+    background-color: rgb(6, 177, 207);
 }
 
 h1{
@@ -32,6 +20,11 @@ h5{
 
 #res{
     color: rgb(85, 82, 82);
+}
+
+.copyright{
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .name{
