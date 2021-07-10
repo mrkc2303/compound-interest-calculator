@@ -1,22 +1,23 @@
 var btn = document.getElementById("btn");
 var body = document.querySelector("body");
 
-function calculate(){
-    var principal = 0;
-    var interest = 0;
-    var numberOfYear = 0;
-    var numberOfTimesInYear = 0;
+function calculate() {
+
     var CI = 0;
+    var principal = document.getElementById("principal").value;
+    var interest = document.getElementById("annual-interest-rate").value;
+    var nyear = document.getElementById("number-of-year").value;
+    var ntime = document.getElementById("number-of-times-in-year").value;
 
-    principal = parseInt(document.getElementById("principal").value);
-    interest = parseInt(document.getElementById("annual-interest-rate").value);
-    nyear = document.getElementById("number-of-year").value;
-    ntime = document.getElementById("number-of-times-in-year").value;
-
-    CI = (principal* Math.pow((1 + (interest/(ntime*100))), (ntime*nyear)));
-    CI = CI.toFixed(2);
-
-    document.getElementById("res").innerHTML = CI;
+    if(principal > 0 && interest > 0 && nyear > 0 && ntime > 0) {
+        CI = (principal* Math.pow((1 + (interest/(ntime*100))), (ntime*nyear)));
+        CI = CI.toFixed(2);
+        document.getElementById("res").innerHTML = CI; 
+    } 
+    else{
+        alert("Please Enter Valid Values!!")
+    }
+    
 }
 
 btn.addEventListener("click", calculate);
