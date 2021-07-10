@@ -24,10 +24,6 @@
   <li>Get your calculations done within seconds<br></li>
 </ul>
 
-<<<<<<< HEAD
-
-=======
->>>>>>> d47471bb3a5008dd0bf5860ff11af22e021ce5a5
 OR USE THIS LINK TO ACCESS THE SITE:
 https://mrkc2303.github.io/compound-interest-calculator/
 
@@ -40,7 +36,7 @@ Without even knowing the formula and doing math, you can now calculate Compound 
 <br><br>
 
 <p>
-	<img src="" alt="image">
+	<img src = "https://user-images.githubusercontent.com/67221487/125161239-d20bc080-e19e-11eb-9892-a6073354a29f.png" alt="image">
 	<br><br>
-	<img src="" alt="image">
+	<img src="https://user-images.githubusercontent.com/67221487/125161252-de901900-e19e-11eb-8ed3-32032b93b56d.png" alt="image">
 </p>
