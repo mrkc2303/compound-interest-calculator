@@ -24,7 +24,10 @@
   <li>Get your calculations done within seconds<br></li>
 </ul>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> d47471bb3a5008dd0bf5860ff11af22e021ce5a5
 OR USE THIS LINK TO ACCESS THE SITE:
 https://mrkc2303.github.io/compound-interest-calculator/
 
