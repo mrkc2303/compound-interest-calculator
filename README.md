@@ -24,6 +24,9 @@
   <li>Get your calculations done within seconds<br></li>
 </ul>
 
+OR USE THIS LINK TO ACCESS THE SITE:
+https://mrkc2303.github.io/compound-interest-calculator/
+
 <h2 id="use-of-the-project">Use of the Project</h2>
 
 <p>
